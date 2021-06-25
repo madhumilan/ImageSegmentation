@@ -25,10 +25,10 @@ def main():
 
 		img_num = img_name[6]
 		pred_mask_img = os.path.join(folder_path, "../mask_images")
-		pred_mask_img = pred_mask_img+"\\pred_mask"+str(img_num)+".png"
+		pred_mask_img = pred_mask_img+"/pred_mask"+str(img_num)+".png"
 
 		true_mask_img =	 os.path.join(folder_path, "../mask_images")
-		true_mask_img = true_mask_img+"\\true_mask"+str(img_num)+".png"
+		true_mask_img = true_mask_img+"/true_mask"+str(img_num)+".png"
 
 		img = image.load_img(filename, target_size=(224,224,3))
 		x = image.img_to_array(img)
