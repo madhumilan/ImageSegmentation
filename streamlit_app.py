@@ -19,7 +19,7 @@ def main():
 		filenames = os.listdir(folder_path)
 		filename = file_selector(folder_path=folder_path)
 
-		img_name = filename[filename.index('\\'):]
+		img_name = filename[filename.index('/'):]
 		st.write('You selected `%s`' % img_name[1:])
 		st.write('Choose a different image using the drop down')
 
